@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Input Patient Information</title>
+  <meta http-equiv="Content-Type" charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.jquery.min.js"></script>
+
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <script src="search_page.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+        <form role="form" method="post" action="login.php">
+
+          <h1 class="center">Input Patient Information</h1>
+
+          <hr class="colorgraph">
+
+          <br>
+
+          <label for="name">Name: </label>
+          <div class="form-group">
+            <input type="text" id="name" name="name" class="form-control input-lg"
+            placeholder="Enter name here:" required tabindex="1">
+          </div>
+
+          <br>
+
+          <label for="date-of-birth">Date of Birth: </label>
+          <div class="form-group">
+            <input type="text" id="date-of-birth" name="date-of-birth" class="form-control input-lg"
+            placeholder="mm/dd/yyyy" required tabindex="2">
+          </div>
+
+          <br>
+
+          <label for="choose-procedure">Procedure(s): </label>
+          <!-- Multiple Dropdown -->
+          <select id="choose-procedure" name="choose-procedure" class="chosen" data-placeholder="Type Here: " multiple="true" tabindex="3">
+	           <option value="Tooth Extraction">Tooth Extraction</option>
+             <option value="Dental Implants">Dental Implants</option>
+	           <option value="Root Canal">Root Canal</option>
+             <option value="Teeth Cleaning">Teeth Cleaning</option>
+
+          </select>
+
+          <br><br><br><br>
+
+          <div class="row">
+
+              <div class="col-xs-12 col-md-6">
+              <input type="submit" value="Next" class="btn btn-primary btn-block btn-lg" tabindex="4">
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+</body>
+
+</html>
